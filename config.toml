@@ -11,12 +11,30 @@ theme = "pulsar"
     url = "/"
     weight= 1
 
-     [[menu.main]]
+    [[menu.main]]
     name = "Projects"
     url = "/projects"
     weight= 2
 
-     [[menu.main]]
+    [[menu.main]]
     name = "Contact"
     url = "/contact"
+    weight= 3
+
+    [[menu.social]]
+    name = "Facebook"
+    pre = '<i class="fab fa-facebook-f"></i>'
+    url = "/"
+    weight= 1
+
+    [[menu.social]]
+    name = "Instagram"
+    pre = '<i class="fab fa-instagram"></i>'
+    url = "https://www.instagram.com/olivierchemla/"
+    weight= 2
+
+    [[menu.social]]
+    name = "GitHub"
+    pre = '<i class="fab fa-github"></i>'
+    url = "https://github.com/OliveCh12"
     weight= 3

@@ -15,6 +15,13 @@
           </li>
           {{ end }}
         </ul>
+        <ul class="navbar-nav ml-auto">
+            {{ range .Site.Menus.social }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL }}">{{ .Pre }}</a>
+          </li>
+          {{ end }}
+        </ul>
       </div>
     </nav>
   </div>
