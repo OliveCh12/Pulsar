@@ -1,8 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Pulsar"
-
 theme = "pulsar"
+
+DefaultContentLanguage = "fr"
+
 
 [menu]
 
@@ -22,19 +24,25 @@ theme = "pulsar"
     weight= 3
 
     [[menu.social]]
-    name = "Facebook"
-    pre = '<i class="fab fa-facebook-f"></i>'
-    url = "/"
+    name = "Linkedin"
+    pre = '<i class="fab fa-linkedin"></i>'
+    url = "https://www.linkedin.com/in/olivier-chemla-86a261106/"
     weight= 1
-
-    [[menu.social]]
-    name = "Instagram"
-    pre = '<i class="fab fa-instagram"></i>'
-    url = "https://www.instagram.com/olivierchemla/"
-    weight= 2
 
     [[menu.social]]
     name = "GitHub"
     pre = '<i class="fab fa-github"></i>'
     url = "https://github.com/OliveCh12"
+    weight= 2
+
+    [[menu.social]]
+    name = "Facebook"
+    pre = '<i class="fab fa-facebook-f"></i>'
+    url = "/"
     weight= 3
+
+    [[menu.social]]
+    name = "Instagram"
+    pre = '<i class="fab fa-instagram"></i>'
+    url = "https://www.instagram.com/olivierchemla/"
+    weight= 4

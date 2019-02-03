@@ -1,0 +1,21 @@
+{
+  "name": "pulsar",
+  "version": "1.0.0",
+  "description": "My porfolio website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "hugo version",
+    "watch": "sass --watch themes/pulsar/src/sass/main.scss:themes/pulsar/static/css/main.minified.css --style compressed",
+    "dev": "hugo serve -D -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliveCh12/Pulsar.git"
+  },
+  "author": "Olivier Chemla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OliveCh12/Pulsar/issues"
+  },
+  "homepage": "https://github.com/OliveCh12/Pulsar#readme"
+}

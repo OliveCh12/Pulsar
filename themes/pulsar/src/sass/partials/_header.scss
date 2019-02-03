@@ -1,0 +1,16 @@
+header {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba($white, 0.05);
+  background-color: $primary;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar {
+  padding: 0rem 0rem;
+}
+
+.active {
+  color: $primary !important;
+}
