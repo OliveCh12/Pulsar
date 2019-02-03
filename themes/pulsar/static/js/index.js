@@ -7,7 +7,7 @@ function setProgress() {
     for (const key in progressBars) {
         if (progressBars.hasOwnProperty(key)) {
             const element = progressBars[key];
-            element.style.width = "30%"
+            element.style.width = "60%"
         }
     }
 }
