@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Pulsar"
 theme = "pulsar"
+Author= "Olivier Chemla"
 
 DefaultContentLanguage = "fr"
 
@@ -46,3 +47,53 @@ DefaultContentLanguage = "fr"
     pre = '<i class="fab fa-instagram"></i>'
     url = "https://www.instagram.com/olivierchemla/"
     weight= 4
+
+[params]
+#--------------------
+# Skills Area Section
+#--------------------
+[params.section_skills]
+enable = true
+title = "Mes_Benchmarks"
+subtitle = "Qui suis je ? D'où je viens ? Que fais je ?"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+button = "Plus de détails"
+
+[[params.skills]]
+name = "HTML5"
+description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+value = "80"
+[[params.skills]]
+name = "CSS3"
+description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+value = "70"
+[[params.skills]]
+name = "Javascript (ES7)"
+description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+value = "50"
+[[params.skills]]
+name = "Wordpress"
+description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+value = "40"
+[[params.skills]]
+name = "JAMStack"
+description ="Bonne connaissance des générateurs de site static (Jekyll, Hugo, GatsbyJS)"
+value = "70"
+[[params.skills]]
+name = "ReactJS"
+description ="Bonne compréhension du framework, actuellement en apprentissage."
+value = "50"
+
+[[params.skills_details]]
+title = "Languages"
+list = ["Javascript (ES6)", "PHP", "Bash", "SCSS", "Python"]
+info = "Working"
+[[params.skills_details]]
+title = "Framework (Front / Back)"
+list = ["Bootstrap", "ReactJS", "Hugo", "Jeckyll", "Laravel"]
+info = "working"
+
+[[params.skills_details]]
+title = "Autres"
+list = ["Shell", "Unix", "Vim", "Photoshop", "Illustrator", "Sketch", "GitHub"]
+info = "working"

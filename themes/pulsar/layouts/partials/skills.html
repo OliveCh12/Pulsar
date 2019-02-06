@@ -1,38 +1,79 @@
-<section class="section-home">
+<section class="section-skills" id="section-skills">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                 <!-- Empty Column-->
+                <!-- Empty Column-->
             </div>
+            {{ with .Site.Params.section_skills}}
             <div class="col-lg-6">
-                <div class="section-home-header text-right">
-                    <h3 class="section-home-title">Mes_Compétences \\</h3>
-                    <p class="section-home-subtitle">Vous trouverez mes compétences si dessous</p>
+                <div class="section-header text-right">
+                    <h3 class="section-title-outline">{{ .title }}<div class="cursor blink"></div>
+                    </h3>
+                    <p class="section-subtitle">{{ .subtitle }}</p>
                 </div>
             </div>
+            {{ end }}
         </div>
 
-
-        <button class="btn btn-outline-light btn-sm mb-4" onclick="setProgress()">Start Benchmark <i class="far fa-play-circle ml-2"></i></button>
+        <button class="btn btn-outline-primary btn-sm mb-3" onclick="setProgress()" id="start-benchmark">Start
+            Benchmark<i class="fas fa-play-circle ml-2"></i></button>
 
         <div class="row">
+
+            {{/* Column 1 */}}
             <div class="col-lg-6">
-                <div class="skill-title">HTML</div>
-                <p class="skill-description">Un potentiel beaucoup trop puissant, vous n'êtes pas prêt.</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                        value="80"></div>
+                {{ range first 3 .Site.Params.Skills }}
+                <div class="skill">
+                    <div class="skill-title">{{ .name }}</div>
+                    <p class="skill-description">{{ .description }}</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 0%" value="{{ .value }}"></div>
+                    </div>
                 </div>
+                {{ end }}
             </div>
+
+
+            {{/* Column 2 */}}
             <div class="col-lg-6">
-                <div class="skill-title">CSS</div>
-                <p class="skill-description">De bonne connaisances, j'ai fait ce site quand même !</p>
-                <div class="progress">
-                    <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100" style="width: 50%" value="30"></div>
+                {{ range after 3 .Site.Params.Skills }}
+                <div class="skill">
+                    <div class="skill-title">{{ .name }}</div>
+                    <p class="skill-description">{{ .description }}</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 0%" value="{{ .value }}"></div>
+                    </div>
                 </div>
+                {{ end }}
             </div>
         </div>
+
+        <div class="section-details">
+                {{ with .Site.Params.section_skills}}
+                <div class="text-right">
+                  <button class="btn btn-outline-primary btn-sm mb-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" data-micron="blink">
+                  {{ .button }} <i class="fas fa-arrow-alt-circle-down ml-1"></i>
+                </button>
+                </div>
+                {{ end }}
+              
+              <div class="collapse" id="collapseExample">
+              <div class="card-deck">
+              {{ range .Site.Params.skills_details }}
+                    <div class="card card-skills">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ .title }}</h5>
+                        <ul class="card-text">
+                          <li class="card-list">{{ delimit .list "<li class='card-list'>" }}</li>
+                        </ul>
+                      </div>
+                    </div>
+              {{ end }}
+                </div>
+              </div>
+              </div>
 
     </div>
 </section>

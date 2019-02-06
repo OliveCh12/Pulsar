@@ -10,4 +10,16 @@ footer {
     color: #fff;
     height: 4em;
   }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $primary;
+    font-weight: bolder;
+
+  }
+  a:hover{
+    color: $primary;
+    text-decoration: none;
+  }
 }

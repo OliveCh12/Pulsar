@@ -1,0 +1,12 @@
+.card {
+    border-radius: inherit;
+    border: 1px solid rgba($color: $white, $alpha: 0.1);
+    background-color: $background;
+    color: $white;
+} 
+
+.card-title {
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: bolder;
+}

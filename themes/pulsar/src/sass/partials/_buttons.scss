@@ -2,3 +2,16 @@
     border-radius: inherit !important;
     text-transform: uppercase;
 }
+
+.btn-outline-primary {
+    color: $primary;
+    border: 1px solid $primary;
+}
+.btn-outline-primary:hover{
+    background-color: $primary;
+    border: 1px solid $primary;
+}
+
+.btn-outline-primary:focus{
+    box-shadow: none;
+}
