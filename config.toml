@@ -2,10 +2,12 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Pulsar"
 theme = "pulsar"
-Author= "Olivier Chemla"
-
 DefaultContentLanguage = "fr"
 
+
+[author]
+  name = "Olivier Chemla"
+  homepage = "olivierchemla.com"
 
 [menu]
 
@@ -49,6 +51,9 @@ DefaultContentLanguage = "fr"
     weight= 4
 
 [params]
+
+[params.hero]
+description = "Freelancer, Étudiant autodidacte passionné de graphisme et de nouvelles technologies depuis très jeune. Je suis quelqu'un qui aime se challenger désirant aller plus loin et d'en apprendre toujours plus. À l'affût des nouvelles tendances et ouvert à toutes formes de création graphique, c'est l'une des raisons qui me motive créer et m'adapter selon chaque projet. Perfectionniste dans ma démarche, je saurais apporter une réponse à la hauteur des attentes de chaque demandes."
 #--------------------
 # Skills Area Section
 #--------------------

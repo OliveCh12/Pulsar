@@ -1,3 +1,8 @@
+var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 10
+});
+
 const progressBars = document.querySelectorAll(".progress-bar")
 const benchmarkButton = document.querySelector("#start-benchmark")
 

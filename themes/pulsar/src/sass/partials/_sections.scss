@@ -11,14 +11,17 @@ section {
 
 // Section Career
 .section-carrer {
-    background-color: $primary;
+    background-color: rgba($color: $primary, $alpha: 1);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     border-bottom: 1px solid $primary;
 
     h4{
         font-weight: bolder;
-        padding-bottom: 1rem;
-        border-bottom: 2px solid $black;
+        text-transform: uppercase;
+        border: 2px solid $white;
+        padding: 0.5rem 1rem;
+        color: $white;
+        margin: 3rem 0rem;
     }
 
 }
@@ -30,13 +33,13 @@ section {
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
-    height: 3.3rem;
+    min-height: 3.3rem;
     vertical-align: bottom;
 }
 
 .section-title-outline {
     color: $white;
-    border: 2px solid $white;
+    border: 5px solid $white;
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
@@ -68,19 +71,25 @@ section {
 }
 
 // Carreer Customization
+.career {
+    margin: 2rem 0rem;
+    border-left: 5px solid $white;
+    padding-left: 2rem;
+}
 .career-title {
     color: $black;
-    background-color: rgba($color: $white, $alpha: 0.1);
-    text-transform: uppercase;
     font-weight: bolder;
-    display: inline-block;
 }
-
 .career-date {
-    color: $white;
+    color: rgba($color: $black, $alpha: 0.5);
+    margin-bottom: 1rem;
 }
 .career-subtitle{
-    color: rgba($color: $white, $alpha: 0.5)
+    color: rgba($color: $white, $alpha: 1);
+    text-transform: uppercase;
+}
+.career-text{
+    color: rgba($color: $white, $alpha: 0.5);
 }
 
 .progress {
