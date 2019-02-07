@@ -1,0 +1,18 @@
+label {
+    color: $primary;
+}
+
+.form-control {
+    color: $white;
+    background-color: $background-dark;
+    border-radius: inherit;
+    border: 1px solid rgba($color: $white, $alpha: 0.1);
+}
+
+.form-control:active,
+.form-control:focus {
+    color: $white;
+    border: 1px solid $primary;
+    background-color: $background-dark;
+    box-shadow: none;
+}

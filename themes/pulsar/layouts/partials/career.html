@@ -33,8 +33,10 @@
             <div class="col-lg-6">
                 <h4>Parcours Professionel</h4>
                 {{ range .Site.Data.careers }}
+                {{ $startdate := time .startdate }}
+                {{ $enddate := time .enddate }}
                 <div class="career">
-                    <span class="career-date">{{ .date }}</span>
+                    <span class="career-date">{{ dateFormat "January 2006" $startdate }} // {{ dateFormat "January 2006" $enddate  }}</span>
                     <h5 class="career-title">{{ .title }}</h5>
                     <h6 class="career-subtitle">{{ .company }}</h6>
                     <p class="career-text">{{ .description }}</p>

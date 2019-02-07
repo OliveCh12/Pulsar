@@ -65,11 +65,11 @@ description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
 button = "Plus de détails"
 
 [[params.skills]]
-name = "HTML5"
+name = "HTML"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "80"
 [[params.skills]]
-name = "CSS3"
+name = "CSS / SASS"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "70"
 [[params.skills]]
@@ -77,16 +77,16 @@ name = "Javascript (ES7)"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "50"
 [[params.skills]]
-name = "Wordpress"
+name = "ReactJS"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "40"
 [[params.skills]]
-name = "JAMStack"
-description ="Bonne connaissance des générateurs de site static (Jekyll, Hugo, GatsbyJS)"
+name = "VueJS"
+description ="Bonne bases dans l'enssemble"
 value = "70"
 [[params.skills]]
-name = "ReactJS"
-description ="Bonne compréhension du framework, actuellement en apprentissage."
+name = "JAMStack (Static Gen)"
+description ="A l'aise dans l'utilisation de générateur de site statique (Jekyll, Hugo, GatsbyJS)"
 value = "50"
 
 [[params.skills_details]]

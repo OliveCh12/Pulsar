@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Area-Left Area-Right";
+    flex-grow: 1;
+}
+
+.split-element-left {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    background-color: $primary;
+}
+
+.split-element-right {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    background-color: $success;
+}

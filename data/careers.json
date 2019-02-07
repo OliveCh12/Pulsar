@@ -1,20 +1,23 @@
 {
     "career_1": {
         "title": "Développeur Front-End",
-        "date": "2019-02-05T17:58:17+01:00",
+        "startdate": "2018-08-05T17:58:17+01:00", 
+        "enddate": "2018-06-05T17:58:17+01:00", 
         "company": "L'Artisan du Digital",
-        "description": "Création et développement d’un thème WordPress ainsi que le déploiement du site internet"
+        "description": "Développement et Intégration de dashboard en VueJS"
     },
     "career_2": {
-        "title": "Développeur Front-End",
-        "date": "2019-02-05T17:58:17+01:00",
-        "company": "L'Artisan du Digital",
-        "description": "Création et développement d’un thème WordPress ainsi que le déploiement du site internet"
+        "title": "Développeur JAMStack (Static Gen)",
+        "startdate": "2018-01-05T18:00:17+01:00", 
+        "enddate": "2018-03-05T18:00:17+01:00", 
+        "company": "Freelance Web Developper",
+        "description": "Création et développement de sites internet générés en statique"
     },
     "career_3": {
-        "title": "Développeur Front-End",
-        "date": "2019-02-05T17:58:17+01:00",
-        "company": "L'Artisan du Digital",
-        "description": "Création et développement d’un thème WordPress ainsi que le déploiement du site internet"
+        "title": "Intégrateur Web",
+        "startdate": "2017-09-05T17:58:17+01:00", 
+        "enddate": "2017-12-05T17:58:17+01:00", 
+        "company": "BAP - Léonard de Vinci",
+        "description": "Intégration de maquettes web en vue d'un projet associatif"
     }
 }
