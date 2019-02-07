@@ -39,6 +39,12 @@ DefaultContentLanguage = "fr"
     weight= 2
 
     [[menu.social]]
+    name = "CodePen"
+    pre = '<i class="fab fa-codepen"></i>'
+    url = "https://codepen.io/SweetPerception/"
+    weight= 3
+
+    [[menu.social]]
     name = "Facebook"
     pre = '<i class="fab fa-facebook-f"></i>'
     url = "/"

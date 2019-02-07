@@ -11,6 +11,10 @@ header {
   padding: 0rem 0rem;
 }
 
+.nav-item .nav-link:hover{
+  color: $primary;
+}
+
 
 .navbar-dark .navbar-nav .active>.nav-link {
   color: $primary !important;
