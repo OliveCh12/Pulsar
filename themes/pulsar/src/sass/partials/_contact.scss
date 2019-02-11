@@ -1,20 +1,64 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "Area-Left Area-Right";
+    display: flex;
+    background-color: aquamarine;
+    flex-grow: 1;
+
+    p {
+        color: $white;
+        opacity: 0.8;
+    }
+
+
+    .half-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        width: 30%;
+        background: $primary;
+        @include grid-pattern;
+        border-right: 1px solid $primary;
+        
+       h3 {
+           color: $white;
+           font-weight: bolder;
+           margin-bottom: 2rem;
+       }
+        .nav-link, a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
+    .half-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 70%;
+        padding: 5rem;
+        background-color: $background;
+    }
 }
 
-.split-element-left {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-    background-color: $primary;
+@media screen and (max-width: 1024px) {
+    .half-right {
+        padding: 10px;
+    }
 }
 
-.split-element-right {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-    background-color: $success;
+@media screen and (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+
+        .half-left {
+            width: 100%;
+        }
+
+        .half-right {
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+
 }

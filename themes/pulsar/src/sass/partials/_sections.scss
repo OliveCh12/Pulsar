@@ -4,8 +4,7 @@ section {
 
 // Section Skills
 .section-skills {
-    background-color: $background;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    @include carbon-pattern;
     border-bottom: 1px solid $primary;
 }
 
@@ -33,7 +32,7 @@ section {
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
-    min-height: 3.3rem;
+    min-height: 3.7rem;
     vertical-align: bottom;
 }
 
@@ -43,7 +42,7 @@ section {
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
-    height: 3.3rem;
+    height: 3.7rem;
     vertical-align: middle;
 }
 
@@ -57,7 +56,7 @@ section {
 
 // Skills Customization
 .skill {
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
 }
 
 .skill-title {
@@ -68,6 +67,7 @@ section {
 .skill-description {
     color: rgba($white, 0.5);
     font-size: 10pt;
+    margin: 1rem 0rem;
 }
 
 // Carreer Customization
@@ -133,7 +133,7 @@ section {
 
 .progress-bar {
     background-color: $primary !important;
-    transition: 2s;
+    transition: 1.3s;
 }
 
 .cursor {

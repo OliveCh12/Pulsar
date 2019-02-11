@@ -1,66 +1,120 @@
 {{ define "main" }}
-    <section class="grid-container">
-        <div class="split-element-left">
+<div class="grid-container">
+    <div class="half-left">
+        <div class="container">
+            <h3>Rejoignez moi !</h3>
 
+            <p>Pour toute demande ou informations suplémentaire, vous pouvez me contacter via ce formulaire.</p>
+
+            <p>Vous trouverez si-desous les liens pour me rejoindre</p>
+
+            <nav class="nav justify-content-end">
+             {{ range .Site.Menus.social }}
+                 <a class="nav-link" href="{{ .URL }}">{{ .Pre }}</a>
+             {{ end }}
+            </nav>
         </div>
-        <div class="split-element-right">
 
-         </div>
-    </section>
-    {{/*  <div class="container mt-3 mb-3">
+    </div>
+    <div class="half-right">
+        <div class="container">
+            <h3 class="section-title-outline">Contact_Form <div class="cursor blink"></div>
+            </h3>
+            <p>Pour me contacter, veuillez remplir les champs si-dessous.</p>
+            <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstname">Prénom</label>
+                            <input class="form-control" type="text" name="firstname" placeholder="Votre Prénom"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="secondname">Nom</label>
+                            <input class="form-control" type="text" name="secondname" placeholder="Votre Nom" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input class="form-control" type="email" name="email" placeholder="Votre E-mail" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input class="form-control" type="text" name="subject" placeholder="Votre sujet" required>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Votre message" required></textarea>
+                            <br>
+                            <div data-netlify-recaptcha="true"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Envoyer <i class="fas fa-envelope ml-2"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+{{/* <div class="container mt-3 mb-3">
+    <div class="row">
+        {{ with .Site.Params.section_skills}}
+        <div class="col-lg-6">
+            <div class="section-header">
+                <h3 class="section-title-outline">Formulaire de contact<div class="cursor blink"></div>
+                </h3>
+                <p class="section-subtitle">Pour contacter, veuillez remplir les champs ci-dessous</p>
+            </div>
+        </div>
+        {{ end }}
+        <div class="col-lg-6">
+            <!-- Empty Column-->
+        </div>
+
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
         <div class="row">
-            {{ with .Site.Params.section_skills}}
-            <div class="col-lg-6">
-                <div class="section-header">
-                    <h3 class="section-title-outline">Formulaire de contact<div class="cursor blink"></div>
-                    </h3>
-                    <p class="section-subtitle">Pour contacter, veuillez remplir les champs ci-dessous</p>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input class="form-control" type="text" name="firstname" placeholder="Votre Prénom" required>
                 </div>
             </div>
-            {{ end }}
-            <div class="col-lg-6">
-                <!-- Empty Column-->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="secondname">Nom</label>
+                    <input class="form-control" type="text" name="secondname" placeholder="Votre Nom" required>
+                </div>
             </div>
-
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input class="form-control" type="email" name="email" placeholder="Votre E-mail" required>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input class="form-control" type="text" name="subject" placeholder="Votre sujet" required>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" name="message" id="" rows="3" placeholder="Votre message" required></textarea>
+                    <br>
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
+            </div>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="firstname">Prénom</label>
-                        <input class="form-control" type="text" name="firstname" placeholder="Votre Prénom" required>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="secondname">Nom</label>
-                        <input class="form-control" type="text" name="secondname" placeholder="Votre Nom" required>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input class="form-control" type="email" name="email" placeholder="Votre E-mail" required>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input class="form-control" type="text" name="subject" placeholder="Votre sujet" required>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" name="message" id="" rows="3" placeholder="Votre message"
-                            required></textarea>
-                        <br>
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
-                </div>
-            </div>
-
-                <button class="btn btn-outline-primary" type="submit">Envoyer <i class="fas fa-envelope ml-2"></i></button>
-        </form>  */}}
-{{ end }}
+        <button class="btn btn-outline-primary" type="submit">Envoyer <i class="fas fa-envelope ml-2"></i></button>
+    </form> */}}
+    {{ end }}

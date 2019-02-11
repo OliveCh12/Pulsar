@@ -1,45 +1,35 @@
 <section class="section-skills" id="section-skills">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <!-- Empty Column-->
-            </div>
-            {{ with .Site.Params.section_skills}}
-            <div class="col-lg-6">
-                <div class="section-header text-right">
-                    <h3 class="section-title-outline">Mes_Projets<div class="cursor blink"></div>
-                    </h3>
-                    <p class="section-subtitle">{{ .subtitle }}</p>
-                </div>
-            </div>
-            {{ end }}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- Empty Column-->
+      </div>
+      {{ with .Site.Params.section_skills}}
+      <div class="col-lg-6">
+        <div class="section-header text-right">
+          <h3 class="section-title-outline">Mes_Projets<div class="cursor blink"></div>
+          </h3>
+          <p class="section-subtitle">{{ .subtitle }}</p>
         </div>
-
-        <div class="card-deck">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
+      </div>
+      {{ end }}
     </div>
+
+    <div class="card-deck">
+      {{ range first 5 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
+      <div class="card">
+        <a href="{{ .Permalink }}">
+          <img src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1565&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ .Title }}</h5>
+            <p class="card-text">{{ .Summary | truncate 100 }}</p>
+            <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }}</small></p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    
+  </div>
 </section>

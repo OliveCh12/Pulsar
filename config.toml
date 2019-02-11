@@ -66,7 +66,7 @@ description = "Freelancer, Étudiant autodidacte passionné de graphisme et de n
 [params.section_skills]
 enable = true
 title = "Mes_Benchmarks"
-subtitle = "Qui suis je ? D'où je viens ? Que fais je ?"
+subtitle = "Mes compétences, mon niveau, mes acquis."
 description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 button = "Plus de détails"
 
@@ -74,26 +74,38 @@ button = "Plus de détails"
 name = "HTML"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "80"
+pre = "fab fa-html5"
+
 [[params.skills]]
 name = "CSS / SASS"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "70"
+pre = "fab fa-css3-alt"
+
+
 [[params.skills]]
 name = "Javascript (ES7)"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "50"
+pre = "fab fa-js-square"
 [[params.skills]]
 name = "ReactJS"
 description ="Bases solides et bonne compréhension de la structure d'une page HTML"
 value = "40"
+pre = "fab fa-react"
+
 [[params.skills]]
 name = "VueJS"
 description ="Bonne bases dans l'enssemble"
 value = "70"
+pre = "fab fa-vuejs"
+
 [[params.skills]]
 name = "JAMStack (Static Gen)"
 description ="A l'aise dans l'utilisation de générateur de site statique (Jekyll, Hugo, GatsbyJS)"
 value = "50"
+pre = "fas fa-feather"
+
 
 [[params.skills_details]]
 title = "Languages"
