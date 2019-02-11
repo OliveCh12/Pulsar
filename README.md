@@ -2,9 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c83566a2-4507-4064-927e-5b59810dd673/deploy-status)](https://app.netlify.com/sites/thepulsar/deploys)
 
-This project contains my portfolio and my resume.
+## Usage
 
+This project contains my portfolio and my resume.
 It was built with [Hugo](https://gohugo.io/) and hosted on [Netlify](https://www.netlify.com/)
+
+## Installation
 
 After cloning this repository, simply launch the command `npm install` at the root of the project.
 
