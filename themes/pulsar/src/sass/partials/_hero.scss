@@ -123,9 +123,21 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    
+    .hero {
+        padding: 2rem 0rem;
+    }
+    .hero-wrapper{
+        min-height: 0rem;
+        margin-bottom: 6rem;
+    }
+    .hero-footer {
+        display: none;
+    }
     .hero-title {
         font-size: 20pt;
+        font-weight: bolder;
     }
 
     .hero-footer {

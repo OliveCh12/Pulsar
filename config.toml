@@ -12,12 +12,12 @@ DefaultContentLanguage = "fr"
 [menu]
 
     [[menu.main]]
-    name = "Home"
+    name = "Acceuil"
     url = "/"
     weight= 1
 
     [[menu.main]]
-    name = "Projects"
+    name = "Projets"
     url = "/projects"
     weight= 2
 
