@@ -38,16 +38,11 @@
         width: 70%;
         padding: 5rem;
         background-color: $background;
+    overflow: visible;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .half-right {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .grid-container {
         flex-direction: column;
 
@@ -58,6 +53,22 @@
         .half-right {
             width: 100%;
             padding: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .grid-container {
+        flex-direction: column;
+
+        .half-left {
+            width: 100%;
+            padding: 2rem 0rem;
+        }
+
+        .half-right {
+            width: 100%;
+            padding: 2rem 0rem;
         }
     }
 

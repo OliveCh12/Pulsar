@@ -12,6 +12,11 @@ header {
   padding: 0rem 0rem;
 }
 
+.navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 .nav-item .nav-link:hover{
   color: $primary;
 }
@@ -20,4 +25,10 @@ header {
 .navbar-dark .navbar-nav .active>.nav-link {
   color: $white!important;
   font-weight: bolder !important;
+}
+
+#navbar-nav-socials {
+  flex-direction: row;
+  justify-content: center;
+  
 }

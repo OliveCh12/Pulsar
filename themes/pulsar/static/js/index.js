@@ -1,40 +1,7 @@
-ScrollReveal({
-    reset: true
-}).reveal('section-career', {
-    delay: 500
-});
-
-
-// Typed JS
-var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 10
-});
-
 // Skill Section
 const progressBars = document.querySelectorAll(".progress-bar")
 const descriptions = document.querySelectorAll(".skill-description")
 const benchmarkButton = document.querySelector("#start-benchmark")
-
-// console.log(benchmarkButton.offsetTop)
-// console.log(benchmarkButton.scrollTop);
-
-// console.log(window.offsetTop)
-// console.log(benchmarkButton.scrollHeight)
-// console.log(window.scroll)
-// console.log(body.scrollTop);
-
-// window.addEventListener('scroll', function (e) {
-//     // console.log(e);
-//     // console.log(Math.round(this.scrollY));
-//     // console.log(benchmarkButton.offsetTop + '   ben offtop')
-//     // console.log((Math.round(this.scrollY) == benchmarkButton.offsetTop));
-
-//     if (Math.round(this.scrollY) == benchmarkButton.offsetTop) {
-//         setProgress()
-//     }
-// // console.log(benchmarkButton.scrollTop+ '  ben scrltop');
-// })
 
 
 function setProgress() {
@@ -57,6 +24,13 @@ function setProgress() {
         }
     }
 }
+
+// Contact Form
+
+const inputsFields = document.querySelectorAll(".form-control")
+
+console.log(inputsFields)
+
 
 // window.addEventListener('scroll', function () {
 //     if (window.scrollY >= 400) {

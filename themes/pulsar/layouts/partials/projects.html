@@ -16,7 +16,7 @@
     </div>
 
     <div class="card-deck">
-      {{ range first 5 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
+      {{ range first 3 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
       <div class="card">
         <a href="{{ .Permalink }}">
           <img src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1565&q=80"

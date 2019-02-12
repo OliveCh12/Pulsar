@@ -1,13 +1,13 @@
 <header>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
+    <a class="navbar-brand" href="{{ "http://olivierchemla.xyz/" | relURL }}">{{ .Site.Title }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-center">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
           <li class="nav-item {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
@@ -15,7 +15,7 @@
           </li>
           {{ end }}
         </ul>
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" id="navbar-nav-socials">
             {{ range .Site.Menus.social }}
           <li class="nav-item">
             <a class="nav-link" href="{{ .URL }}">{{ .Pre }}</a>
