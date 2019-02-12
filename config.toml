@@ -1,4 +1,4 @@
-baseURL = "http://olivierchemla.xyz"
+baseURL = "https://olivierchemla.xyz"
 languageCode = "en-us"
 title = "Pulsar"
 theme = "pulsar"
