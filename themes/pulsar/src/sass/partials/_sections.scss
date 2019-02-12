@@ -24,6 +24,12 @@ section {
     }
 
 }
+// Section Projects
+.section-projects {
+    background-color: $background;
+    @include grid-pattern;
+    padding: 2rem 0rem;
+}
 
 // Section Structure
 .section-title {

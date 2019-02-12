@@ -59,7 +59,7 @@ DefaultContentLanguage = "fr"
 [params]
 
 [params.hero]
-description = "Freelancer, Étudiant autodidacte passionné de graphisme et de nouvelles technologies depuis très jeune. Je suis quelqu'un qui aime se challenger désirant aller plus loin et d'en apprendre toujours plus. À l'affût des nouvelles tendances et ouvert à toutes formes de création graphique, c'est l'une des raisons qui me motive créer et m'adapter selon chaque projet. Perfectionniste dans ma démarche, je saurais apporter une réponse à la hauteur des attentes de chaque demandes."
+description = "Salut ! Alors, pour me presenter brievenement, je suis Étudiant, ex(Freelancer) et autodidacte passionné de graphisme et de nouvelles technologies depuis très jeune. Je suis quelqu'un qui aime se challenger, désirant aller toujours plus loin afin d'en apprendre beaucou plus. À l'affût des nouvelles tendances et ouvert à toutes formes de création graphique, c'est l'une des raisons qui me motive créer et m'adapter selon chaque projet. Perfectionniste dans ma démarche, je saurais apporter une réponse à la hauteur des attentes de chaque demandes. Now, Proceed -->"
 #--------------------
 # Skills Area Section
 #--------------------
@@ -72,21 +72,21 @@ button = "Plus de détails"
 
 [[params.skills]]
 name = "HTML"
-description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+description ="Bases solides et bonne compréhension de la structuration d'une page HTML"
 value = "80"
 pre = "fab fa-html5"
 
 [[params.skills]]
-name = "CSS / SASS"
-description ="Bases solides et bonne compréhension de la structure d'une page HTML"
+name = "CSS / SCSS"
+description ="De bonne notions, structuration à l'aide de méthodologie BEM & SASS"
 value = "70"
 pre = "fab fa-css3-alt"
 
 
 [[params.skills]]
 name = "Javascript (ES7)"
-description ="Bases solides et bonne compréhension de la structure d'une page HTML"
-value = "50"
+description ="Acquis dans l'essemble, "
+value = "60"
 pre = "fab fa-js-square"
 [[params.skills]]
 name = "ReactJS"
@@ -97,26 +97,26 @@ pre = "fab fa-react"
 [[params.skills]]
 name = "VueJS"
 description ="Bonne bases dans l'enssemble"
-value = "70"
+value = "50"
 pre = "fab fa-vuejs"
 
 [[params.skills]]
 name = "JAMStack (Static Gen)"
 description ="A l'aise dans l'utilisation de générateur de site statique (Jekyll, Hugo, GatsbyJS)"
-value = "50"
+value = "70"
 pre = "fas fa-feather"
 
 
 [[params.skills_details]]
 title = "Languages"
-list = ["Javascript (ES6)", "PHP", "Bash", "SCSS", "Python"]
+list = ["Javascript (ES7)", "PHP", "Bash", "SCSS", "Python"]
 info = "Working"
 [[params.skills_details]]
-title = "Framework (Front / Back)"
-list = ["Bootstrap", "ReactJS", "Hugo", "Jeckyll", "Laravel"]
+title = "Frameworks (Front / Back)"
+list = ["Bootstrap", "VueJS", "ReactJS", "Hugo", "Jeckyll", "Laravel"]
 info = "working"
 
 [[params.skills_details]]
 title = "Autres"
-list = ["Shell", "Unix", "Vim", "Photoshop", "Illustrator", "Sketch", "GitHub"]
+list = ["NPM / Yarn", "NPM Scripts / Gulp", "GitHub", "Shell", "Linux", "Vim", "Photoshop", "Illustrator", "Sketch"]
 info = "working"

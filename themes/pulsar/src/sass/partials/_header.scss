@@ -1,8 +1,9 @@
 header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba($primary, 1);
-  box-shadow: 0px 10px 10px rgba($color: $black, $alpha: 0.1);
+  background-color: $primary;
+  // border-bottom: 1px solid rgba($dark-night, 1);
+  box-shadow: 0px 10px 10px rgba($color: $black, $alpha: 0.2);
   font-weight: 500;
   color: white;
   z-index: 10;
@@ -17,18 +18,29 @@ header {
   padding-left: 1rem;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
   color: $primary;
 }
 
+.navbar-dark .navbar-toggler {
+  border: inherit;
+  transition: 0.3s;
+}
+
+.navbar-dark .navbar-toggler:focus,
+.navbar-toggler:hover {
+  transform: scale(1.2);
+}
+
+
 
 .navbar-dark .navbar-nav .active>.nav-link {
-  color: $white!important;
+  color: $white !important;
   font-weight: bolder !important;
 }
 
 #navbar-nav-socials {
   flex-direction: row;
   justify-content: center;
-  
+
 }
