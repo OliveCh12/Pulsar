@@ -108,8 +108,8 @@ pre = "fas fa-feather"
 
 
 [[params.skills_details]]
-title = "Languages"
-list = ["Javascript (ES7)", "PHP", "Bash", "SCSS", "Python"]
+title = "Languages / Library"
+list = ["Javascript (ES7)", "jQuery", "PHP", "Bash", "SCSS", "Python"]
 info = "Working"
 [[params.skills_details]]
 title = "Frameworks (Front / Back)"

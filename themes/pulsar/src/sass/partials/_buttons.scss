@@ -4,10 +4,16 @@ button:focus {
 }
 
 .btn {
-    border-radius: inherit !important;
+    // border-radius: inherit !important;
     text-transform: uppercase;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
-
+.btn-sm {
+    padding: 0.25rem 1rem;
+}
 .btn-primary {
     background-color: $primary;
     border: 1px solid $primary;

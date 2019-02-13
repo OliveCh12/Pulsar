@@ -1,12 +1,14 @@
 header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: $primary;
-  // border-bottom: 1px solid rgba($dark-night, 1);
+  border-bottom: 1px solid rgba($primary, 1);
   box-shadow: 0px 10px 10px rgba($color: $black, $alpha: 0.2);
   font-weight: 500;
   color: white;
   z-index: 10;
+}
+.colored {
+  background-color: $primary;
 }
 
 .navbar {

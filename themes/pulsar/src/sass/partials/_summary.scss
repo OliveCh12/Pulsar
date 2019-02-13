@@ -1,0 +1,17 @@
+.summary {
+    color: $primary;
+    position: fixed;
+    background-color: $dark-night;
+    display: none;
+
+    .summary-title {
+        color: $primary;
+        border-bottom: 1px solid $white;
+        width: 200px;
+        padding: 1rem 0rem;
+    }
+
+    .summary-title .active {
+        color: $white;
+    }
+}

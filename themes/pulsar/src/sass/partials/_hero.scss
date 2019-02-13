@@ -19,10 +19,11 @@
     // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: $black;
     // -webkit-text-fill-color: white;
-    font-family: 'Rubik';
-    font-size: 30pt;
+    font-family: 'Teko';
+    font-size: 50pt;
     font-weight: bolder;
     text-transform: uppercase;
+    // letter-spacing: 0.1rem;
     width: 100%;
     background-color: $white;
     color: $night;
@@ -30,7 +31,9 @@
 
     strong {
         color: $primary;
-        -webkit-text-stroke-color: $primary;
+        font-weight: bolder;
+        animation: double-flash_2393 2s ease infinite;
+        transform-origin: 50% 50%;
     }
 }
 
@@ -72,6 +75,8 @@
 
 .hero-console:hover {
     border: 1px solid rgba($primary, 1);
+    transform: scale(1.2);
+    font-size: 12pt;
 }
 
 .hero-console-header {
@@ -148,7 +153,7 @@
     }
 
     .hero-title {
-        font-size: 20pt;
+        font-size: 30pt;
         font-weight: bolder;
     }
 

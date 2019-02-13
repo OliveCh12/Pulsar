@@ -30,35 +30,79 @@ section {
     @include grid-pattern;
     padding: 2rem 0rem;
 }
+// Section Resume
+.section-resume {
+    background-color: $background;
+    @include grid-pattern;
+    padding: 2rem 0rem;
+    .container {
+        text-align: center;
+        color: $white;
+    }
+}
 
 // Section Structure
 .section-title {
+    font-family: 'Teko';
+    font-size: 35pt;
     color: $primary;
     background-color: $white;
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
-    min-height: 3.5rem;
-    vertical-align: bottom;
+    box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.2);
+
+
+    strong {
+        color: $primary;
+        font-weight: bolder;
+        animation: double-flash_2393 2s ease infinite;
+        transform-origin: 50% 50%;
+    }
 }
 
 .section-title-outline {
+    font-family: 'Teko';
+    font-size: 35pt;
     color: $white;
-    border: 5px solid $white;
+    border: 3px solid $white;
     padding: 0.5rem 1rem;
     font-weight: bolder;
     text-transform: uppercase;
-    height: 3.7rem;
-    vertical-align: middle;
+    box-shadow: 10px 10px 10px rgba($color: $black, $alpha: 0.2);
+
+    strong {
+        color: $primary;
+     
+        animation: double-flash_2393 2s ease infinite;
+        transform-origin: 50% 50%;
+    }
 }
 
 .section-subtitle {
-    color: rgba($color: $primary, $alpha: 1)
+    color: rgba($color: $primary, $alpha: 1);
+    font-size: 14pt;
+    padding: 0.5rem 0rem;
+    // background-color: rgba($color: $primary, $alpha: 1);
 }
 
 .section-subtitle-light {
-    color: rgba($color: $white, $alpha: 1)
+    color: rgba($color: $white, $alpha: 1);
+    font-size: 14pt;
+    padding: 0.5rem 0rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .section-title{
+        font-size: 25pt;
+    }
+
+    .section-title-outline{
+        font-size: 25pt;
+    }
+
+}
+
 
 // Skills Customization
 .skill {
