@@ -25,15 +25,44 @@ function setProgress() {
     }
 }
 
-// Contact Form
 
-const inputsFields = document.querySelectorAll(".form-control")
+const summaryInfo = document.querySelector(".summary-info")
 
-console.log(inputsFields)
+// Scrolling Sections Elements
+const sectionSkills = document.querySelector(".section-skills")
+const sectionCareer = document.querySelector(".section-career")
 
 
-// window.addEventListener('scroll', function () {
-//     if (window.scrollY >= 400) {
-//         setProgress()
-//     }
-// })
+console.log(sectionSkills.scrollHeight, sectionSkills.scroll)
+
+function smoothScrolling() {
+    sectionCareer.scrollTo({
+        top: 700,
+        left: 100,
+        behavior: 'smooth'
+      });
+
+      sectionCareer.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
+      console.log("You've just scrolled")
+}
+
+
+
+
+window.addEventListener('scroll', function () {
+    let scroll = window.scrollY
+    if (scroll <= 0) {
+        summaryInfo.innerHTML = `Introduction`
+    } else if (scroll >= 460) {
+        summaryInfo.innerHTML = "Skills"
+    } else if (scroll >= 650) {
+        summaryInfo.innerHTML = "Career"
+    } else {
+        summaryInfo.innerHTML = `Keep Scrollingg`
+    }
+});
+
+window.addEventListener('scroll', function () {
+   console.log(body.scrollHeight)
+})
