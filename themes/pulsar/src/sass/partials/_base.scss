@@ -7,13 +7,24 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: $background;
 }
 
 .wrapper {
     flex-grow: 1;
     min-height: 400px;
+}
+
+// TEMPOORARY
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 60pt;
+    color: $primary;
 }
 
 ::selection {

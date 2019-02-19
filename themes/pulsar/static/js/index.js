@@ -26,43 +26,46 @@ function setProgress() {
 }
 
 
-const summaryInfo = document.querySelector(".summary-info")
+const summaryInfo = document.querySelector(".summarydd")
 
 // Scrolling Sections Elements
 const sectionSkills = document.querySelector(".section-skills")
 const sectionCareer = document.querySelector(".section-career")
 
 
-console.log(sectionSkills.scrollHeight, sectionSkills.scroll)
+// console.log(sectionSkills.scrollHeight, sectionSkills.scroll)
 
 function smoothScrolling() {
-    sectionCareer.scrollTo({
-        top: 700,
-        left: 100,
-        behavior: 'smooth'
-      });
-
-      sectionCareer.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-
-      console.log("You've just scrolled")
+    // Scroll Into View Skills
+    sectionSkills.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest"
+    });
+    // Launching Progress
+    setProgress()
 }
 
 
 
 
-window.addEventListener('scroll', function () {
-    let scroll = window.scrollY
-    if (scroll <= 0) {
-        summaryInfo.innerHTML = `Introduction`
-    } else if (scroll >= 460) {
-        summaryInfo.innerHTML = "Skills"
-    } else if (scroll >= 650) {
-        summaryInfo.innerHTML = "Career"
-    } else {
-        summaryInfo.innerHTML = `Keep Scrollingg`
-    }
-});
+// window.addEventListener('scroll', function () {
+//     let scroll = window.scrollY
+//     if (scroll <= 0) {
+//         summaryInfo.innerHTML = `Introduction`
+//         summaryInfo.style.color = "red"
+//     } else if (scroll >= 460) {
+//         summaryInfo.innerHTML = "Skills"
+//         summaryInfo.style.color = "#fff"
 
-window.addEventListener('scroll', function () {
-   console.log(body.scrollHeight)
+//     } else if (scroll >= 650) {
+//         summaryInfo.innerHTML = "Career"
+//     } else {
+//         summaryInfo.innerHTML = `Career`
+
+//     }
+// });
+
+window.addEventListener("keydown", function (event) {
+    event.code = "ArrowRight"
 })

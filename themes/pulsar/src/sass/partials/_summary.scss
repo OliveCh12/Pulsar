@@ -1,31 +1,22 @@
-.summary {
-    color: $primary;
+.summary{
     position: fixed;
-    background-color: $dark-night;
-    display: none;
-
-    .summary-title {
-        color: $primary;
-        border-bottom: 1px solid $white;
-        width: 200px;
-        padding: 1rem 0rem;
-    }
-
-    .summary-title .active {
-        color: $white;
-    }
-}
-
-.summary-info{
-    position: fixed;
-    bottom: 500px;
+    bottom: 400px;
     left: 0px;
-    background-color: $white;
+    // background-color: $white;
     font-family: 'Ubuntu Mono';
     color: $primary;
     font-size: 12pt;
     z-index: 30;
     padding: 0.5rem 0.5rem;
-    width: 100px;
+    margin-left: 1rem;
+    width: 150px;
     font-weight: bolder;
-}
+    // border-bottom: 1px solid $white;
+    list-style-type: circle !important;
+
+
+ }
+// .summary_item, .active{
+//     color: $white;
+//     border-bottom: 1px solid $white;
+// }
