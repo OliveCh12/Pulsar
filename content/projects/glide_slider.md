@@ -1,6 +1,7 @@
 ---
 title: "Glide Slider"
 date: 2019-02-10T21:48:21+01:00
+tags: ["HTML", "CSS", "Responsive Design", "Bootstrap"]
 draft: false
 ---
 

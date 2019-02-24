@@ -4,6 +4,10 @@ title = "Pulsar"
 theme = "pulsar"
 DefaultContentLanguage = "fr"
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 
 [author]
   name = "Olivier Chemla"

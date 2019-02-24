@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="wrapper">
+  <section class="section-projects">
+  <article class="project-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-header">
+            <h3 class="section-title-outline">{{ .Title }}<strong>_</strong></h3>
+            {{ with .Params.tags }}
+            {{ range . }}
+              <span class="badge badge-primary" href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+            <p>{{ .Content}}</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="project-single-img" src="" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+</div>
+{{ end }}

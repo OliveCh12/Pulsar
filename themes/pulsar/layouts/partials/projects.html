@@ -9,7 +9,7 @@
         <div class="section-header text-right">
             <h3 class="section-title-outline">Mes<strong>_</strong>Projets //</h3>
           </h3>
-          <p class="section-subtitle">{{ .subtitle }}</p>
+          <p class="section-subtitle">Quelques projets que j'ai réalisé</p>
         </div>
       </div>
       {{ end }}
@@ -23,8 +23,13 @@
             class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{ .Title }}</h5>
+            {{ with .Params.tags }}
+              {{ range . }}
+                <span class="badge badge-primary" href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</span>
+              {{ end }}
+            {{ end }}
             <p class="card-text">{{ .Summary | truncate 100 }}</p>
-            <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }}</small></p>
+            {{/*  <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }}</small></p>  */}}
           </div>
         </a>
       </div>
