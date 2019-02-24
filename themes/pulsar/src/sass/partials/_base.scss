@@ -22,9 +22,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-h1{
+
+h1 {
     font-size: 60pt;
     color: $primary;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 ::selection {

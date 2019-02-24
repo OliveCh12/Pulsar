@@ -7,13 +7,31 @@ header {
   color: white;
   z-index: 10;
 }
+
 .colored {
   background-color: $primary;
+  animation: float 0.5s ease;
 }
+
+@keyframes float {
+  0% {
+    transform: translate(0, -100px);
+    background-color: $dark-night;
+
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    background-color: $primary;
+
+  }
+}
+
 
 .navbar {
   padding: 0rem 0rem;
 }
+
 
 .navbar-nav .nav-link {
   padding-right: 1rem;

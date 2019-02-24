@@ -4,20 +4,28 @@
     background-color: $background;
     color: $white;
     transition: 0.3s;
+
     a {
         text-decoration: none;
         color: $white;
     }
 }
+
 .card-img-top {
     width: 100%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 .card:hover {
     transform: scale(1.05);
     background-color: $background-dark;
-    border: 1px solid rgba($color: $primary, $alpha: 1);    
+    border: 1px solid rgba($color: $primary, $alpha: 1);
+
+    .card-text {
+        opacity: 1;
+        margin-top: 1rem;
+    }
 }
 
 
@@ -25,4 +33,22 @@
     color: $primary;
     text-transform: capitalize;
     font-weight: bolder;
+    transition: 0.7s;
+
+}
+
+.card-text {
+    margin-top: 1rem;
+    opacity: 0.4;
+    transition: 0.7s;
+}
+
+.badge-primary {
+    background-color: $primary;
+    border-radius: inherit;
+}
+
+.badge, .badge-primary:hover {
+    background-color: $primary;
+    border-radius: inherit;
 }
