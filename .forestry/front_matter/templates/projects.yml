@@ -1,0 +1,30 @@
+---
+label: Projects
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Enter the title of the projects
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Enter the description of the project
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: tag_list
+  label: Tags
+  name: tags
+  description: Names the different technologie used for the project
+- type: file
+  name: featured_image
+  label: Featured Image
+  config:
+    maxSize: '10'
+  description: The Featured Image for the project
