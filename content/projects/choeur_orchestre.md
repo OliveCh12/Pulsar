@@ -12,10 +12,8 @@ featured_image: "“/images/projects/choeuretorchestre.png”"
 project_link: https://choeuretorchestre.netlify.com/
 
 ---
-## Description
-
 Site Internet, Réalisé dans le cadre associatif de l'UNESCO.
 
-L'Organisation se nomme "Choeur et Orchestre, Les Voix Unies". Le site internet est réalisé par l'intermédiaire d'un générateur de site statique tel que ["Hugo"](https://gohugo.io/ "Hugo"). 
+L'Organisation se nomme "Choeur et Orchestre, Les Voix Unies". Le site internet est réalisé par l'intermédiaire d'un générateur de site statique tel que ["Hugo"](https://gohugo.io/ "Hugo").
 
 Cependant le contenu du site reste dynamique et peut être modifier à tout moment.
