@@ -1,6 +1,6 @@
 baseURL = "https://olivierchemla.xyz"
 languageCode = "en-us"
-title = "Pulsar"
+title = "Front-End Developper"
 theme = "pulsar"
 DefaultContentLanguage = "fr"
 
@@ -82,27 +82,29 @@ pre = "fab fa-html5"
 
 [[params.skills]]
 name = "CSS / SCSS"
-description ="De bonne notions, structuration à l'aide de méthodologie BEM & SASS"
+description ="Bonnes notions, structuration du CSS à l'aide de BEM et du préprocesseur SASS"
 value = "70"
 pre = "fab fa-css3-alt"
 
 
 [[params.skills]]
 name = "Javascript (ES7)"
-description ="Acquis dans l'essemble, "
+description ="Bonne maîtrise de Javascript en VanillaJS (En constant apprentissage)"
 value = "60"
 pre = "fab fa-js-square"
-[[params.skills]]
-name = "ReactJS"
-description ="Bases solides et bonne compréhension de la structure d'une page HTML"
-value = "40"
-pre = "fab fa-react"
 
 [[params.skills]]
 name = "VueJS"
-description ="Bonne bases dans l'enssemble"
+description ="Maitrise des concepts de base"
 value = "50"
 pre = "fab fa-vuejs"
+
+[[params.skills]]
+name = "ReactJS"
+description ="Utilisation "
+value = "40"
+pre = "fab fa-react"
+
 
 [[params.skills]]
 name = "JAMStack (Static Gen)"
@@ -122,5 +124,5 @@ info = "working"
 
 [[params.skills_details]]
 title = "Autres"
-list = ["NPM / Yarn", "NPM Scripts / Gulp", "GitHub", "Shell", "Linux", "Vim", "Photoshop", "Illustrator", "Sketch"]
+list = ["NPM / Yarn", "NPM Scripts / Gulp", "GitHub / GitLab", "Shell", "Linux", "Vim", "Photoshop", "Illustrator", "Sketch"]
 info = "working"

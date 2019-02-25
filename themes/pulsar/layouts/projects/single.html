@@ -16,7 +16,14 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="project-single-img" src="" alt=""></div>
+          {{ with .Params.featured_image }}
+          <img class="project-single-img" src="{{ . | urlize }}" alt="">
+          {{ end }}
+          <div class="text-center mt-3">
+              {{ with .Params.project_link }}
+          <a class="btn btn-primary" href="{{ . | relURL }}">Website <i class="fas fa-link ml-2"></i></a>
+          {{ end }}
+        </div>
         </div>
       </div>
     </div>

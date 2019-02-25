@@ -13,6 +13,8 @@
 
 .card-img-top {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -41,6 +43,9 @@
     margin-top: 1rem;
     opacity: 0.4;
     transition: 0.7s;
+}
+.card-hide{
+    display: none;
 }
 
 .badge-primary {

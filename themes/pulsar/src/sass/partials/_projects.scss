@@ -12,5 +12,7 @@
 .project-single-img {
     width: 100%;
     height: 300px;
+    border: 1px solid rgba($color: $white, $alpha: 0.2);
+    object-fit: cover;
     background-color: $dark-night;
 } 

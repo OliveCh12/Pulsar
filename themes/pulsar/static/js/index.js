@@ -69,3 +69,16 @@ function smoothScrolling() {
 window.addEventListener("keydown", function (event) {
     event.code = "ArrowRight"
 })
+
+const hiddenLink = document.querySelector("#hidden-link")
+
+for (const key in hiddenLink) {
+    if (hiddenLink.hasOwnProperty(key)) {
+        const element = hiddenLink[key];
+        console.log(element.innerHTML)     
+    }
+}
+
+function showMe() {
+    console.log('Olivier')
+}

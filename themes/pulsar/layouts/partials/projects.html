@@ -9,7 +9,7 @@
         <div class="section-header text-right">
             <h3 class="section-title-outline">Mes<strong>_</strong>Projets //</h3>
           </h3>
-          <p class="section-subtitle">Quelques projets que j'ai réalisé</p>
+          <p class="section-subtitle">Quelques projets que j'ai réalisés</p>
         </div>
       </div>
       {{ end }}
@@ -19,8 +19,9 @@
       {{ range first 3 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
       <div class="card">
         <a href="{{ .Permalink }}">
-          <img src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1565&q=80"
-            class="card-img-top" alt="...">
+            {{ with .Params.featured_image }}
+            <img class="card-img-top" src="{{ . | urlize }}" alt="">
+            {{ end }}
           <div class="card-body">
             <h5 class="card-title">{{ .Title }}</h5>
             {{ with .Params.tags }}
