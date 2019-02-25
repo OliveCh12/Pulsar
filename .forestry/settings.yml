@@ -10,11 +10,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/checkout
-  label: Checkout
-  create: all
-  match: "**/*"
-- type: directory
   path: content/contact
   label: Contact
   create: all
