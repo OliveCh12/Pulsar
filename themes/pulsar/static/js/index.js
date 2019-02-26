@@ -1,3 +1,13 @@
+const pageLoader = document.querySelector(".page-loader")
+
+setTimeout(() => {
+    pageLoader.style.display = "none";
+}, 3000);
+
+// Swap Style Sheet
+function changeTheme(sheet) {
+    document.querySelector("#pagestyle").setAttribute('href', sheet)
+}
 // Skill Section
 const progressBars = document.querySelectorAll(".progress-bar")
 const descriptions = document.querySelectorAll(".skill-description")
@@ -70,15 +80,5 @@ window.addEventListener("keydown", function (event) {
     event.code = "ArrowRight"
 })
 
+
 const hiddenLink = document.querySelector("#hidden-link")
-
-for (const key in hiddenLink) {
-    if (hiddenLink.hasOwnProperty(key)) {
-        const element = hiddenLink[key];
-        console.log(element.innerHTML)     
-    }
-}
-
-function showMe() {
-    console.log('Olivier')
-}

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
-        {{- partial "scripts.html" . -}}
-    </body>
+{{- partial "head.html" . -}}
+
+<body>
+    {{ if .IsHome }}
+    <div class="page-loader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    {{ end }}
+
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+</body>
+
 </html>

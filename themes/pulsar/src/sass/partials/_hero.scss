@@ -165,10 +165,16 @@
 
 }
 
-// .hero-area{
-//     width: 100%;
-//     background-color: $black;
-//     color: $white;
-//     font-family: 'Fira Code';
-//     font-size: 10pt;
-// }
+.hero-theme-button {
+    height: 15px;
+    width: 15px;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    border: inherit;
+    transition: 0.3s;
+}
+
+.hero-theme-button:hover {
+    transform: scale(1.3);
+}
+

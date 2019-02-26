@@ -1,6 +1,5 @@
 {{ define "main" }}
 <main class="section-projects">
-  <div class="wrapper">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -12,7 +11,8 @@
             {{ end }}
             {{ end }}
           </div>
-          {{ range first 4 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
+          {{ $paginator := .Paginate (where .Pages "Section" "projects") 4}}
+          {{ range $paginator.Pages }}
           <a href="{{ .Permalink }}" onmouseover="showMe()">
             <div class="card mb-3">
               <div class="card-body">
@@ -25,7 +25,7 @@
                 <div class="card-text">
                   {{ .Summary | truncate 100 }}
                 </div>
-                <div class="card-hide">
+                <div class="card-footer">
                   {{ with .Params.featured_image }}
                   <span id="hidden-link" src="" alt="">{{ . | urlize }}</span>
                   {{ end }}
@@ -34,31 +34,11 @@
             </div>
           </a>
           {{ end }}
+          {{ template "pagination.html" . }}
+
         </div>
         <div class="col-lg-6">
           <div class="project-single-img mb-3" src="" alt=""></div>
-          {{ range after 4 (where .Pages.ByPublishDate.Reverse "Section" "projects") }}
-          <a href="{{ .Permalink }}" onmouseover="showMe()">
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">{{ .Title}}</h5>
-                {{ with .Params.tags }}
-                {{ range . }}
-                <span class="badge badge-primary" href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</span>
-                {{ end }}
-                {{ end }}
-                <div class="card-text">
-                  {{ .Summary | truncate 100 }}
-                </div>
-                <div class="card-hide">
-                  {{ with .Params.featured_image }}
-                  <span id="hidden-link" src="" alt="">{{ . | urlize }}</span>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </a>
-          {{ end }}
         </div>
       </div>
     </div>

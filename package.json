@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "hugo version",
-    "watch": "sass --watch themes/pulsar/src/sass/main.scss:themes/pulsar/static/css/main.minified.css --style compressed",
+    "watch": "sass --watch themes/pulsar/src/sass/main.scss:themes/pulsar/static/css/main_blue.minified.css --style compressed",
     "dev": "hugo serve -D -w"
   },
   "repository": {

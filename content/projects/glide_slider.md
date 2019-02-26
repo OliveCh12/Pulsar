@@ -7,4 +7,6 @@ project_link: "https://slider-demo.netlify.com/"
 draft: false
 ---
 
-Le glide slider, est un simple slider réaliser un CSS à l'aide du script "GlideJS" Il est très pratique pour contrinuer avec le ciel.
+Simple Slider Responsive réalisé uniquement en CSS à l'aide de la library "GlideJS".
+
+Ce projet à été réalisé dans le but d'être intégrer dans un site vitrine afin de présenter le profil de différentes personnes.

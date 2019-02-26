@@ -63,7 +63,7 @@ DefaultContentLanguage = "fr"
 [params]
 
 [params.hero]
-description = "Salut ! Alors, pour me presenter brievenement, je suis Étudiant, ex(Freelancer) et autodidacte passionné de graphisme et de nouvelles technologies depuis très jeune. Je suis quelqu'un qui aime se challenger, désirant aller toujours plus loin afin d'en apprendre beaucou plus. À l'affût des nouvelles tendances et ouvert à toutes formes de création graphique, c'est l'une des raisons qui me motive créer et m'adapter selon chaque projet. Perfectionniste dans ma démarche, je saurais apporter une réponse à la hauteur des attentes de chaque demandes. Now, Proceed -->"
+description = "Salut ! Enchanté, moi, c'est Olivier, je suis Étudiant en Développement Web sur Paris, mais aussi Autodidacte ! Peut être même plus autodidacte que étudiant finalement...;)  On peut dire que je suis de nature curieuse si bien que j'adore me challenger, et par conséquent, j'essaye de rester en pépetuelle évolution ! Même si c'est dur... Pour plus d'information n'hésitez pas à me contacter. Ah oui, je suis indécis sur la couleur de mon site donc dites moi celle qui conviendrais le mieux. Merci !"
 #--------------------
 # Skills Area Section
 #--------------------
@@ -77,7 +77,7 @@ button = "Plus de détails"
 [[params.skills]]
 name = "HTML"
 description ="Bases solides et bonne compréhension de la structuration d'une page HTML"
-value = "80"
+value = "90"
 pre = "fab fa-html5"
 
 [[params.skills]]
@@ -89,19 +89,19 @@ pre = "fab fa-css3-alt"
 
 [[params.skills]]
 name = "Javascript (ES7)"
-description ="Bonne maîtrise de Javascript en VanillaJS (En constant apprentissage)"
+description ="Bonne maîtrise de Javascript en PureJS/VanillaJS (En constant apprentissage)"
 value = "60"
 pre = "fab fa-js-square"
 
 [[params.skills]]
 name = "VueJS"
-description ="Maitrise des concepts de base"
-value = "50"
+description ="Maitrisé dans l'enssemble, déjà utilisé sur plusieurs projets."
+value = "60"
 pre = "fab fa-vuejs"
 
 [[params.skills]]
 name = "ReactJS"
-description ="Utilisation "
+description ="Concepts de bases assimilés (En apprentissage)"
 value = "40"
 pre = "fab fa-react"
 
@@ -119,10 +119,10 @@ list = ["Javascript (ES7)", "jQuery", "PHP", "Bash", "SCSS", "Python"]
 info = "Working"
 [[params.skills_details]]
 title = "Frameworks (Front / Back)"
-list = ["Bootstrap", "VueJS", "ReactJS", "Hugo", "Jeckyll", "Laravel"]
+list = ["Bootstrap", "VueJS", "ReactJS (Junior)", "Hugo", "Jeckyll", "Laravel"]
 info = "working"
 
 [[params.skills_details]]
 title = "Autres"
-list = ["NPM / Yarn", "NPM Scripts / Gulp", "GitHub / GitLab", "Shell", "Linux", "Vim", "Photoshop", "Illustrator", "Sketch"]
+list = ["NPM / Yarn", "NPM Scripts / Gulp", "GitHub / GitLab", "Shell", "Linux", "VSCode / Atom / Vim", "Photoshop", "Illustrator", "Sketch / Figma"]
 info = "working"

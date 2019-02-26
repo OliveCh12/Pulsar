@@ -1,0 +1,28 @@
+.page-link {
+    background-color: inherit;
+    border: none;
+    color: $white;
+    transition: 0.3s;
+}
+
+.page-link:hover {
+    border: none;
+    background-color: inherit;
+    color: $primary;
+}
+
+.page-item.active .page-link {
+    background-color: $primary;
+    color: $white;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}

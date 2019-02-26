@@ -47,7 +47,9 @@
 .card-hide{
     display: none;
 }
-
+#hidden-link {
+    display: none;
+}
 .badge-primary {
     background-color: $primary;
     border-radius: inherit;

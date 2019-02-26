@@ -18,13 +18,22 @@
                         <div class="hero-console-info">shell // description <i class="fas fa-times"></i></div>
                     </div>
                     <div class="hero-console-text">
-                            <div id="typed-strings">
-                                <p>{{ .description }}</p>
-                            </div>
-                         <span id="typed"></span>
-                    </div>         
+                        <div id="typed-strings">
+                            <p>{{ .description }}</p>
+                        </div>
+                        <span id="typed"></span>
+                    </div>
                 </div>
                 {{ end }}
+                <div class="text-right">
+                    <button class="hero-theme-button blue" style="background: #304ffe;" onclick="changeTheme('/css/main_blue.minified.css')"></button>
+                    <button class="hero-theme-button purple" style="background: #651fff" onclick="changeTheme('/css/main_purple.minified.css')"></button>
+                    <button class="hero-theme-button pink" style="background: #e91e63" onclick="changeTheme('/css/main_pink.minified.css')"></button>
+                    <button class="hero-theme-button red" style="background: #f44336" onclick="changeTheme('/css/main_red.minified.css')"></button>
+                    <button class="hero-theme-button yellow" style="background: #ecd71a" onclick="changeTheme('/css/main_yellow.minified.css')"></button>
+                    <button class="hero-theme-button orange" style="background: #e49008" onclick="changeTheme('/css/main_orange.minified.css')"></button>
+                    <button class="hero-theme-button green" style="background: #00ca68" onclick="changeTheme('/css/main_green.minified.css')"></button>
+                </div>
             </div>
         </div>
     </div>

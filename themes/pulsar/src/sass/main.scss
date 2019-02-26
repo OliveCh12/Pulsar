@@ -3,6 +3,7 @@
 @import "modules/colors";
 
 // Partials
+@import "partials/loader";
 @import "partials/base";
 @import "partials/summary.scss";
 @import "partials/header.scss";
@@ -14,5 +15,8 @@
 @import "partials/forms.scss";
 @import "partials/contact";
 @import "partials/projects";
+@import "partials/pagination";
+
+
 
 

@@ -7,4 +7,6 @@ project_link: "https://splitthatdope.netlify.com/"
 draft: false
 ---
 
-Une grande ambition pour de petit moyen, tel est la vocation de cette performance alors merci de vous en soucier et je vous prie de faire mon mieux alors que c'est complétement vrai. Je suis aussi quelqu'un de convaincant
+Micro Projet réalisé dans le cadre d'un rendu. L'idée étant de partager et de répartir de manière équitable la quantité de "Weed" que chaque client achète.
+
+Utile pour les achats de groupe par exemple.

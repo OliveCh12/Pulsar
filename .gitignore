@@ -2,3 +2,11 @@
 /.sass-cache
 
 themes/pulsar/static/css/main.minified.css.map
+
+themes/pulsar/static/css/main_purple.minified.css.map
+themes/pulsar/static/css/main_blue.minified.css.map
+themes/pulsar/static/css/main_green.minified.css.map
+themes/pulsar/static/css/main_pink.minified.css.map
+themes/pulsar/static/css/main_orange.minified.css.map
+themes/pulsar/static/css/main_yellow.minified.css.map
+themes/pulsar/static/css/main_red.minified.css.map
