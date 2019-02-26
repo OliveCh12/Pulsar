@@ -1,11 +1,19 @@
 ---
-title: "Choeur & Orchestre"
-date: 2019-02-10T21:48:54+01:00
-tags: ["Hugo", "Javascript", "HTML", "SCSS", "Bootstrap"]
-featured_image: “/images/projects/choeuretorchestre.png”
-project_link: "https://choeuretorchestre.netlify.com/"
-draft: false
----
-Un site réaliser dans le cadre associatif et donc très utile pour avoir de bonne notion sur les obstacles.
+title: Choeur & Orchestre
+date: 2019-02-10 20:48:54 +0000
+tags:
+- Hugo
+- Javascript
+- HTML
+- SCSS
+- Bootstrap
+- OpenMaps
+featured_image: "“/images/projects/choeuretorchestre.png”"
+project_link: https://choeuretorchestre.netlify.com/
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis itaque iusto porro quis eveniet natus quod vel autem fugiat dolores, magnam deleniti, commodi consectetur perspiciatis cumque in possimus labore.
+---
+Site Internet, Réalisé dans le cadre associatif de l'UNESCO.
+
+L'Organisation se nomme "Choeur et Orchestre, Les Voix Unies". Le site internet est réalisé par l'intermédiaire d'un générateur de site statique tel que ["Hugo"](https://gohugo.io/ "Hugo").
+
+Cependant le contenu du site reste dynamique et peut être modifier à tout moment.
