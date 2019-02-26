@@ -11,7 +11,7 @@
             {{ end }}
             {{ end }}
           </div>
-          {{ $paginator := .Paginate (where .Pages "Section" "projects") 4}}
+          {{ $paginator := .Paginate (where .Pages "Type" "projects") 4 }}
           {{ range $paginator.Pages }}
           <a href="{{ .Permalink }}" onmouseover="showMe()">
             <div class="card mb-3">
