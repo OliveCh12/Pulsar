@@ -20,10 +20,10 @@ DefaultContentLanguage = "fr"
     url = "/"
     weight= 1
 
-    [[menu.main]]
-    name = "Projets"
-    url = "/projects"
-    weight= 2
+    # [[menu.main]]
+    # name = "Projets"
+    # url = "/projects"
+    # weight= 2
 
     [[menu.main]]
     name = "Contact"
@@ -63,7 +63,7 @@ DefaultContentLanguage = "fr"
 [params]
 
 [params.hero]
-description = "Salut ! Enchanté, moi, c'est Olivier, je suis Étudiant en Développement Web sur Paris, mais aussi Autodidacte ! Peut être même plus autodidacte que étudiant finalement...;)  On peut dire que je suis de nature curieuse si bien que j'adore me challenger, et par conséquent, j'essaye de rester en pépetuelle évolution ! Même si c'est dur... Pour plus d'information n'hésitez pas à me contacter. Ah oui, je suis indécis sur la couleur de mon site donc dites moi celle qui conviendrais le mieux. Merci !"
+description = "Enchanté, moi, c'est Olivier, je suis Étudiant en Développement Web sur Paris, mais aussi Autodidacte ! Peut être même plus autodidacte qu’étudiant finalement...;) De nature curieuse, je me challenge régulièrement sur des microprojets que je réalise de temps en temps afin d'en apprendre avantages ! Cliquez sur découvrir pour mieux me connaître."
 #--------------------
 # Skills Area Section
 #--------------------
