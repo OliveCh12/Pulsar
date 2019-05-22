@@ -1,8 +1,8 @@
-const pageLoader = document.querySelector(".page-loader")
+// const pageLoader = document.querySelector(".page-loader")
 
-setTimeout(() => {
-    pageLoader.style.display = "none";
-}, 3000);
+// setTimeout(() => {
+//     pageLoader.style.display = "none";
+// }, 3000);
 
 // Swap Style Sheet
 function changeTheme(sheet) {
