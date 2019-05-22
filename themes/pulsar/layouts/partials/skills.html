@@ -73,7 +73,7 @@
     </div>
 
     <div class="section-details">
-      {{ with.Site.Params.section_skills }}
+      <!-- {{ with.Site.Params.section_skills }}
       <div class="text-right">
         <button
           class="btn btn-outline-primary btn-sm mb-3"
@@ -87,9 +87,8 @@
           {{ .button }} <i class="fas fa-arrow-alt-circle-down ml-1"></i>
         </button>
       </div>
-      {{ end }}
+      {{ end }} -->
 
-      <div class="collapse" id="collapseExample">
         <div class="card-deck">
           {{ range.Site.Params.skills_details }}
           <div class="card card-skills">
@@ -102,7 +101,7 @@
           </div>
           {{ end }}
         </div>
-      </div>
+
     </div>
   </div>
 </section>
