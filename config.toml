@@ -119,8 +119,8 @@ title = "Languages / Library"
 list = ["Javascript (ES7)", "jQuery", "PHP", "Bash", "SCSS", "Python"]
 info = "Working"
 [[params.skills_details]]
-title = "Frameworks (Front / Back)"
-list = ["Bootstrap", "VueJS", "ReactJS (Junior)", "Hugo", "Jeckyll", "Laravel"]
+title = "Développement Front / Back"
+list = ["ReactJS", "NextJS", "VueJS", "Hugo", "Jeckyll", "Laravel", "Bootstrap", "MySQL"]
 info = "working"
 
 [[params.skills_details]]
