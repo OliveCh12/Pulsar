@@ -1,8 +1,8 @@
 {
     "career_1": {
         "title": "Développeur Front-End",
-        "startdate": "2018-08-05T17:58:17+01:00", 
-        "enddate": "2018-06-05T17:58:17+01:00", 
+        "startdate": "2018-06-05T17:58:17+01:00", 
+        "enddate": "2018-08-05T17:58:17+01:00", 
         "company": "L'Artisan du Digital",
         "description": "Développement et Intégration en VueJS"
     },

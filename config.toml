@@ -1,6 +1,6 @@
 baseURL = "https://olivierchemla.xyz"
 languageCode = "en-us"
-title = "Front-End Developper"
+title = "Portfolio"
 theme = "pulsar"
 DefaultContentLanguage = "fr"
 
@@ -94,21 +94,22 @@ value = "60"
 pre = "fab fa-js-square"
 
 [[params.skills]]
+name = "ReactJS"
+description ="Maitrisé dans l'enssemble, React Hooks (En apprentissage)"
+value = "60"
+pre = "fab fa-react"
+
+[[params.skills]]
 name = "VueJS"
-description ="Maitrisé dans l'enssemble, déjà utilisé sur plusieurs projets."
+description ="Maitrisé dans l'enssemble, utilisé sur quelques projets."
 value = "60"
 pre = "fab fa-vuejs"
 
-[[params.skills]]
-name = "ReactJS"
-description ="Concepts de bases assimilés (En apprentissage)"
-value = "40"
-pre = "fab fa-react"
 
 
 [[params.skills]]
 name = "JAMStack (Static Gen)"
-description ="A l'aise dans l'utilisation de générateur de site statique (Jekyll, Hugo, GatsbyJS)"
+description ="A l'aise dans l'utilisation de générateur de site statique (NextJS, Hugo, GatsbyJS)"
 value = "70"
 pre = "fas fa-feather"
 

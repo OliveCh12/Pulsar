@@ -3,14 +3,14 @@
 {{- partial "head.html" . -}}
 
 <body>
-    {{ if .IsHome }}
+    <!-- {{ if .IsHome }}
     <div class="page-loader">
         <div class="lds-ripple">
             <div></div>
             <div></div>
         </div>
     </div>
-    {{ end }}
+    {{ end }} -->
 
     {{- partial "header.html" . -}}
     {{- block "main" . }}{{- end }}
