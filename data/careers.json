@@ -4,14 +4,14 @@
         "startdate": "2018-06-05T17:58:17+01:00", 
         "enddate": "2018-08-05T17:58:17+01:00", 
         "company": "L'Artisan du Digital",
-        "description": "Développement et Intégration en VueJS"
+        "description": "Développement et Intégration en ReactJS / Redux / Firebase"
     },
     "career_2": {
         "title": "Développeur JAMStack (Static Gen)",
         "startdate": "2018-01-05T18:00:17+01:00", 
         "enddate": "2018-03-05T18:00:17+01:00", 
         "company": "Freelance Web Developper",
-        "description": "Création et développement de sites internet générés en statique"
+        "description": "Création et développement de sites internet générés en statique (NextJS)"
     },
     "career_3": {
         "title": "Intégrateur Web",
